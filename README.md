@@ -1,68 +1,19 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was built using [Fluree's blockchain-backed graph database](https://docs.flur.ee/).
 
-## Available Scripts
+## Introduction
 
-In the project directory, you can run:
+This project contains a lightweight React app that will help with visualizing some of Fluree's native data-tracing capabilities. In order to use the app, you'll need to first be running a local instance of a Fluree database. You can [download the latest version of Fluree for free here](https://fluree-releases-public.s3.amazonaws.com/fluree-latest.zip), and you can [read our documentation for starting a local instance of a Fluree database here](https://docs.flur.ee/docs/getting-started/installation).
 
-### `npm start`
+The project is built around the idea of identity & credentials management, specifically the scenario of validating university transcript records in a way that is secure, confidential, and tamper-proof.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+We've also [uploaded a video](https://www.youtube.com/watch?v=OD20o-3RZk4), explaining the use case for the app and providing a walkthrough of the app within that particular use case.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Starting your Fluree database instance
 
-### `npm test`
+In order to use the app, you'll first need to have a local instance of Fluree running. You can do that by navigating to the directory where you downloaded Fluree and running `./fluree_start.sh` (on a Mac or Linux system -- for a Windows system, you'll have to download a Bash emulator)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Starting the React app
 
-### `npm run build`
+Begin by executing `npm install` in the project directory to locally install the project's dependencies.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+As long as you followed to above step to run a local instance of Fluree, the app will proceed to bootstrap its own database schema and seed data upon mounting. Simply run `npm start` to locally serve the React app to [http://localhost:3000](http://localhost:3000) and open it in your browser.
