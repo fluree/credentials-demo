@@ -4,9 +4,9 @@ This project was built using [Fluree's blockchain-backed graph database](https:/
 
 The repo is built around the idea of identity & credentials management, specifically the scenario of validating university transcript records in a way that is secure, confidential, and tamper-proof.
 
-It contains a lightweight React app that will help with visualizing some of Fluree's native data-tracing capabilities. In order to use the app, you'll need to first be running a local instance of a Fluree database. You can [download the latest version of Fluree for free here](https://fluree-releases-public.s3.amazonaws.com/fluree-latest.zip), and you can [read our documentation for starting a local instance of a Fluree database here](https://docs.flur.ee/docs/getting-started/installation).
+It contains a lightweight React app that will help with visualizing some of Fluree's native data-tracing capabilities. In order to use the app, you'll need to first be running a local instance of a Fluree database. This demo was built and tested using [Fluree v0.13](https://fluree-releases-public.s3.amazonaws.com/fluree-0.13.0.zip), although if you'd like to start a new project using the latest Fluree release, [feel free to download it here](https://fluree-releases-public.s3.amazonaws.com/fluree-latest.zip). You can also [read our documentation for starting a local instance of a Fluree database here](https://docs.flur.ee/docs/getting-started/installation).
 
-We've also [uploaded a video](https://www.youtube.com/watch?v=OD20o-3RZk4), explaining the use case for the app and providing a walkthrough of the app within that particular use case.
+We've [uploaded a video](https://www.youtube.com/watch?v=OD20o-3RZk4), explaining the use case for the app and providing a walkthrough of the app within that particular use case.
 
 ### Starting your Fluree database instance
 
